@@ -1,91 +1,53 @@
 <!DOCTYPE html>
-<html>
-	<head> 
-		<title> HTML Form </title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<div>
-			<form>
-				<section class="header">Sign Up</section>
-				<table>
-					<tr>
-						<td><label for="fname">First Name</label></td>
-						<td><input type="text" id="fname" placeholder="Enter First Name"/></td>
-					</tr>
-					<tr>
-						<td><label for="lname">Last Name</label></td>
-						<td><input type="text" id="lname" placeholder="Enter Last Name"></td>
-					</tr>
-					<tr>
-						<td><label for="DOB">Date of Birth</label></td>
-						<td><input type="date" id="DOB"></td>
-					</tr>
-					<tr>
-						<td>Gender</td>
-						<td>
-							<input type="radio" id="gender_male">
-							<label for="gender_male">Male</label>
-							<input type="radio" id="gender_female">
-							<label for="gender_female">Female</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<label for="country">Country</label>
-						</td>
-						<td>
-							<select id="country">
-								<option value="Country">Country</option>
-								<option value="Nepal">Nepal</option>
-								<option value="India">India</option>
-								<option value="China">China</option>
-								<option value="U.S.A">U.S.A</option>
-								<option value="U.K">U.K</option>
-								<option value="Australia">Australia</option>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<label for="email">E-mail</label>
-						</td>
-						<td>
-							<input type="email" id="email" placeholder="Enter E-mail">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<label for="phone">Phone</label>
-						</td>
-						<td>
-							<input type="tel" id="phone" placeholder="Enter Phone">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<label for="password">Password</label>
-						</td>
-						<td>
-							<input type="password" id="password">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<label for="confirm_password">Confirm Password</label>
-						</td>
-						<td>
-							<input type="password" id="confirm_password">
-						</td>
-					</tr>
-				</table>
-					<input type="checkbox" id="agreement">
-					<label for="agreement">I Agree to the Terms of use</label>
-				<section class="footer">
-					<button type="submit">Submit</button>
-					<button type="reset">Cancel</button>
-				</section>
-			</form>
-		</div>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Blogpage</title>
+	<link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Newspaper</a></li>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <section>
+                <img src="image1.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet...</p>
+                <p class="readMore">Read more</p>
+            </section>
+            <section>
+                <img src="image2.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet...</p>
+                <p class="readMore">Read more</p>
+            </section>
+            <section>
+                <img src="image3.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet...</p>
+                <p class="readMore">Read more</p>
+            </section>
+            <section>
+                <img src="image4.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet...</p>
+                <p class="readMore">Read more</p>
+            </section>
+            <section>
+                <img src="image5.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet...</p>
+                <p class="readMore">Read more</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        &copy; Pratik Paudel. All rights reserved.
+    </footer>
+</body>
 </html>
