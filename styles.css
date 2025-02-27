@@ -1,0 +1,9 @@
+body {
+	background-color: blue;
+}
+
+p {
+	width: 230px;
+	background-color: black;
+	color: white;
+}
