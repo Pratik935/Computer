@@ -4,7 +4,138 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CV Desing in HTML</title>
-        <link rel="stylesheet" href="styles.css">
+        <style>
+            * { 
+                margin: 0; 
+                padding: 0; 
+                box-sizing: border-box; 
+            } 
+            
+            body { 
+                width: 100vw; 
+                height: 100vh; 
+                background-color: lightblue; 
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+            } 
+            
+            .container { 
+                width: 550px; 
+                background-color: #fff; 
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2); 
+                border-radius: 4px; 
+                padding: 10px; 
+            } 
+            
+            .profile {
+                display: flex; 
+                justify-content: space-around; 
+                margin: 5px 5px 20px 5px; 
+                padding-bottom: 10px; 
+                border-bottom: 2px solid black; 
+            } 
+            
+            .profile img { 
+                width:  100px; 
+                height: 120px; 
+                border-radius: 50%; 
+            } 
+            
+            .profile > span { 
+                display: block; 
+                width: 250px; 
+                height: 120px; 
+                text-align: left; 
+                font-size: 30px; 
+                font-weight: 600; 
+                padding-top: 20px; 
+            } 
+            
+            .job { 
+                font-size: 18px; 
+                font-weight: 500; 
+            } 
+            
+            .main { 
+                display: grid;
+                grid-template-columns: 45% 55%; 
+            } 
+            
+            .left { 
+                padding-left: 10px; 
+            } 
+            
+            .contact { 
+                margin: 10px 5px 20px 5px; 
+                padding-bottom: 5px; 
+                box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); 
+                background-color: rgba(250, 250, 250, 0.5); 
+                border-radius: 2px; 
+            } 
+            
+            .contact h4 { 
+                font-size: 20px; 
+                margin-bottom: 10px; 
+                padding: 5px; 
+                background-color: rgba(255, 166, 0, 0.108); 
+                border-left: 2px solid orange; 
+            } 
+            
+            .contact ul { 
+                list-style: none; 
+                padding-left: 5px; 
+            } 
+            
+            .contact ul li { 
+                margin: 3px;
+            } 
+            
+            .languages ul li { 
+                margin: 5px; 
+            } 
+            
+            .languages ul li span { 
+                display: block; 
+                font-size: 14px; 
+            } 
+            
+            .languages ul li input { 
+                width: 170px; 
+            } 
+            
+            .right { 
+                padding-left: 5px; 
+            } 
+            
+            .right .education ul li { 
+                padding-bottom: 10px; 
+                margin: 0px; 
+                border-left: 1px solid green; 
+            } 
+            
+            .right .education ul li .date { 
+                position: relative; 
+                font-size: 11px; 
+                padding: 5px; 
+                padding-top: 0px;
+                } 
+            
+            .right .education ul li .date::before { 
+                content: ''; 
+                position: absolute; 
+                left: -4px; 
+                width: 7px; 
+                height: 7px; 
+                background: green; 
+                border-radius: 50%; 
+            } 
+            
+            .right .education ul li .text{ 
+                font-size: 18px; 
+                padding-left: 10px; 
+            }
+        </style>
     </head> 
     <body>
         <div class="container">
