@@ -3,9 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News</title>
+    <title>News page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Full Page Layout */
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #004080;
+            padding: 15px 20px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Main Content */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        /* News Cards Layout - Different Heights */
+        .news-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start; /* Ensures cards align at the top */
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            display: inline-flex;
+            flex-direction: column;
+            width: 320px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #004080;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Read More Button */
+        .read-more {
+            background-color: #004080;
+            color: white;
+            padding: 8px 12px;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .read-more:hover {
+            background-color: #002b55;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #004080;
+            color: white;
+            margin-top: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Apna News</h1>
+
+    <div class="navbar">Nepal Khabar</div>
+
+    <div class="container">
+        <h1>Latest News</h1>
+        <div class="news-grid">
+            <article class="card">
+                <img src="news1.jpg" alt="News 1">
+                <div class="card-content">
+                    <h3>Lawmakers demand fair investigation into Rs 250 million confiscation</h3>
+                    <p>Lawmakers in the House of Representatives (HoR) today called for an impartial investigation into the recent confiscation...</p>
+                    <a href="https://thehimalayantimes.com/nepal/lawmakers-demand-fair-investigation-into-rs-250-million-confiscation" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="news2.jpg" alt="News 2">
+                <div class="card-content">
+                    <h3>Gold price reaches new high on Wednesday</h3>
+                    <p>The price of gold has reached a new all-time high in the domestic market, rising by Rs 800 per tola...</p>
+                    <a href="https://thehimalayantimes.com/business/gold-price-reaches-new-high-on-wednesday" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="news3.jpg" alt="News 3">
+                <div class="card-content">
+                    <h3>Govt to give public holiday on Ramnawami</h3>
+                    <p>The government has decided to give a public holiday on the day of Ramnawami festival. A meeting of the Council of Ministers...</p>
+                    <a href="https://thehimalayantimes.com/nepal/government-decides-to-give-public-holiday-on-ramnawami" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="news4.jpg" alt="News 4">
+                <div class="card-content">
+                    <h3>White House says Trump and Putin hold call as US seeks Russian sign-off on plan to end Ukraine war</h3>
+                    <p>The White House says President Donald Trump and Russian President Vladimir Putin have begun...</p>
+                    <a href="https://thehimalayantimes.com/world/white-house-says-trump-and-putin-hold-call-as-us-seeks-russian-sign-off-on-plan-to-end-ukraine-war" class="read-more">Read More</a>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Nepal Khabar. All Rights Reserved.
+    </div>
+
 </body>
 </html>
